@@ -1,0 +1,43 @@
+#!/usr/bin/env perl
+#
+# Copyright (c) 2002-2003   The Trustees of Indiana University.  
+#                           All rights reserved.
+# Copyright (c) 2009        Geoffroy Vallee <valleegr@ornl.gov>
+#                           Oak Ridge National Laboratory
+#                           All rights reserved.
+# 
+# This file is part of the OSCAR software package.  For license
+# information, see the COPYING file in the top level directory of the
+# OSCAR source distribution.
+#
+# $Id$
+#
+# Push the first copy of the system-level switcher settings out to
+# the nodes.
+#
+
+# See if there's any defaults that we need to set from the
+# Configurator step
+
+use strict;
+use Carp;
+use warnings "all";
+
+my $cmd = "/var/lib/oscar/packages/switcher/set_switcher_defaults";
+if (system ($cmd)) {
+    die "ERROR: Impossible to execute $cmd";
+}
+
+# Since we just set the defaults, it is now necessary to push the
+# $sw_file out to all nodes.
+
+my $sw_file = "/opt/env-switcher/etc/switcher.ini";
+
+$cmd = "/usr/bin/cpush --all $sw_file $sw_file";
+if (system ($cmd)) {
+    die "ERROR: Impossible to execute $cmd";
+}
+
+# All done
+
+exit 0;
