@@ -82,6 +82,11 @@ purpose.</description>
   </clientDeps>
   <apiDeps/>
   <changelog>
+    <versionEntry version="1.0.12-1">
+      <changelogEntry authorName="Geoffroy Vallee" date="2009-10-21T00:09:17-05:00">
+        <item>Fix permission issues introduced during a mistake moving source code.</item>
+      </changelogEntry>
+    </versionEntry>
     <versionEntry version="1.0.11-1">
       <changelogEntry authorName="Geoffroy Vallee" date="2009-07-11T11:36:03-05:00">
         <item>Fix issues in the user_settings.pm script.</item>
