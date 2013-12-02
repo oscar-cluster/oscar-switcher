@@ -82,6 +82,11 @@ purpose.</description>
   </clientDeps>
   <apiDeps/>
   <changelog>
+    <versionEntry version="1.0.13-1">
+      <changelogEntry authorName="Olivier Lahaye" date="2013-12-02T16:09:58+01:00">
+        <item>Migration from /var/lib/oscar/{package,testing} to /usr/lib/oscar (FHS).</item>
+      </changelogEntry>
+    </versionEntry>
     <versionEntry version="1.0.12-1">
       <changelogEntry authorName="Geoffroy Vallee" date="2009-10-21T00:09:17-05:00">
         <item>Fix permission issues introduced during a mistake moving source code.</item>

@@ -29,7 +29,7 @@ use Carp;
 
 my $ret;
 my $cmd;
-my $path = "/var/lib/oscar/packages/switcher/set_switcher_defaults";
+my $path = "/usr/lib/oscar/packages/switcher/set_switcher_defaults";
 if (-f $path) {
     $cmd = $path;
 } else {

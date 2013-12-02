@@ -20,7 +20,7 @@ if (defined $ENV{OSCAR_PACKAGE_HOME} && -d $ENV{OSCAR_PACKAGE_HOME}) {
     use lib "$ENV{OSCAR_PACKAGE_HOME}";
     require package_config;
 } else {
-    use lib "/var/lib/oscar/packages/switcher";
+    use lib "/usr/lib/oscar/packages/switcher";
     use package_config;
 }
 
@@ -37,7 +37,7 @@ my $outfile;
 if (defined $ENV{OSCAR_PACKAGE_HOME} && -d $ENV{OSCAR_PACKAGE_HOME}) {
     $outfile = "$ENV{OSCAR_PACKAGE_HOME}/configurator.html";
 } else {
-    $outfile = "/var/lib/oscar/packages/switcher/configurator.html";
+    $outfile = "/usr/lib/oscar/packages/switcher/configurator.html";
 }
 
 #

@@ -23,7 +23,8 @@ use strict;
 use Carp;
 use warnings "all";
 
-my $cmd = "/var/lib/oscar/packages/switcher/set_switcher_defaults";
+# FIXME: Do not use hardcoded path. (use get_script_dir instead)
+my $cmd = "/usr/lib/oscar/packages/switcher/set_switcher_defaults";
 if (! -f $cmd) {
     die "ERROR: $cmd does not exist";
 }

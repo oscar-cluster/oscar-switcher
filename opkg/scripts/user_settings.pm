@@ -17,7 +17,7 @@ BEGIN {
     if (defined $ENV{OSCAR_PACKAGE_HOME}) {
         unshift @INC, "$ENV{OSCAR_PACKAGE_HOME}";
     } else {
-        unshift @INC, "/var/lib/oscar/packages/switcher/";
+        unshift @INC, "/usr/lib/oscar/packages/switcher/";
     }
 }
 
