@@ -45,7 +45,7 @@
 Summary: Env-switcher package
 Name: env-switcher
 Version: 1.0.13
-Release: 1
+Release: 2
 License: BSD
 Group: Applications/Environment
 Source: env-switcher-%{version}.tar.gz
@@ -55,7 +55,6 @@ Packager: Jeff Squyres <jsquyres@lam-mpi.org>
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 Requires: modules-oscar tcl
 Provides: switcher
-AutoReqProv: no
 
 %description 
 The env-switcher package provides an convenient method for users to
@@ -174,6 +173,9 @@ fi
 #
 #############################################################################
 %changelog
+* Sun Dec 15 2013 Olivier Lahaye <olivier.lahaye@cea.fr>
+- Re-enabled automatic dependancy generator.
+
 * Thu May 14 2004 Jeff Squyres <jsquyres@lam-mpi.org>
 - Change switcher-reload to switcher_reload, because at least some flavors
   of sh/bash will barf when module's alias command makes that the name
