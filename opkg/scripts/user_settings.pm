@@ -1,4 +1,4 @@
-package scripts::user_settings;
+package user_settings;
 
 # Copyright (c) 2002-2003 The Trustees of Indiana University.  
 #                         All rights reserved.
