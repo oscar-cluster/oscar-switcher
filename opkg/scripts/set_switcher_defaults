@@ -39,7 +39,7 @@ use Data::Dumper;
 # Read in the results from the configurator
 #
 
-my $results = scripts::user_settings::get();
+my $results = user_settings::get();
 
 #
 # If we have output from the configurator step, analyze it and invoke
