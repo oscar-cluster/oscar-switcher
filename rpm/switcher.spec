@@ -176,7 +176,7 @@ fi
 * Sun Dec 15 2013 Olivier Lahaye <olivier.lahaye@cea.fr>
 - Re-enabled automatic dependancy generator.
 
-* Thu May 14 2004 Jeff Squyres <jsquyres@lam-mpi.org>
+* Fri May 14 2004 Jeff Squyres <jsquyres@lam-mpi.org>
 - Change switcher-reload to switcher_reload, because at least some flavors
   of sh/bash will barf when module's alias command makes that the name
   of a shell subroutine.
@@ -226,7 +226,7 @@ fi
 - Added some more requires (perl, tcl), just to be absolutely safe
 - Changed the package name to env-switcher
 
-* Sat Apr 21 2002 Jeff Squyres <jsquyres@lam-mpi.org>
+* Sun Apr 21 2002 Jeff Squyres <jsquyres@lam-mpi.org>
 - Fixed typo in %clean section
 
 * Sun Apr 14 2002 Jeff Squyres <jsquyres@lam-mpi.org>
