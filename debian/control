@@ -1,13 +1,13 @@
 Source: env-switcher
-Section: oscar
+Section: science
 Priority: optional
-Maintainer   : Geoffroy Vallee <valleegr@ornl.gov>
+Maintainer: Geoffroy Vallee <valleegr@ornl.gov>
 Build-Depends: debhelper (>= 4.0.0)
 Standards-Version: 3.7.2
 
 Package: env-switcher
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, liboscar
+Depends: ${shlibs:Depends}, ${misc:Depends}, liboscar-server
 Description: Env-switcher package
  The env-switcher package provides an convenient method for users to
  switch between "similar" packages.  System- and user-level defaults
